@@ -6,7 +6,7 @@
   "scripts": {
     "generate": "node scripts/generate -a",
     "docs": "parcel docs-src/index.html -d dev-docs",
-    "build:docs": "parcel build docs-src/index.html -d docs --no-content-hash",
+    "build:docs": "parcel build docs-src/index.html -d docs --no-content-hash --public-url ./",
     "build": "tsc",
     "clean": "rm -rf src/icons && rm -rf src/index.ts && rm -rf docs && rm -rf dev-docs && rm -rf dist",
     "prod": "npm run clean && npm run generate && npm run build && npm run build:docs",

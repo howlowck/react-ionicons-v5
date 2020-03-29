@@ -1,0 +1,49 @@
+"use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __importStar(require("react"));
+function SvgComponent(props) {
+    return React.createElement("svg", Object.assign({ viewBox: "0 0 512 512" }, props),
+        React.createElement("path", { d: "M256,104v56h56a56,56,0,1,0-56-56Z", style: {
+                fill: "none",
+                stroke: "#000",
+                strokeLinecap: "round",
+                strokeMiterlimit: 10,
+                strokeWidth: 32
+            } }),
+        React.createElement("path", { d: "M256,104c0,15.46,0,56,0,56H200a56,56,0,1,1,56-56Z", style: {
+                fill: "none",
+                stroke: "#000",
+                strokeLinecap: "round",
+                strokeMiterlimit: 10,
+                strokeWidth: 32
+            } }),
+        React.createElement("rect", { x: 64, y: 160, width: 384, height: 112, rx: 32, ry: 32, style: {
+                fill: "none",
+                stroke: "#000",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                strokeWidth: 32
+            } }),
+        React.createElement("path", { d: "M416,272V416a48,48,0,0,1-48,48H144a48,48,0,0,1-48-48V272", style: {
+                fill: "none",
+                stroke: "#000",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                strokeWidth: 32
+            } }),
+        React.createElement("line", { x1: 256, y1: 160, x2: 256, y2: 464, style: {
+                fill: "none",
+                stroke: "#000",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                strokeWidth: 32
+            } }));
+}
+exports.default = SvgComponent;

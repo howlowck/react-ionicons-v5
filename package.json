@@ -1,0 +1,38 @@
+{
+  "name": "react-ionicons-v5",
+  "version": "1.0.0",
+  "description": "React Components for Ionicon v5 (with some enhancements)",
+  "main": "dist/prod.js",
+  "scripts": {
+    "generate": "node scripts/generate -a",
+    "docs": "parcel docs-src/index.html -d dev-docs",
+    "build:docs": "parcel build docs-src/index.html -d docs --no-content-hash",
+    "build": "tsc",
+    "clean": "rm -rf src/icons && rm -rf src/index.ts && rm -rf docs && rm -rf dev-docs && rm -rf dist",
+    "prod": "npm run clean && npm run generate && npm run build && npm run build:docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/howlowck/react-ionicon-v5"
+  },
+  "author": "Hao Luo",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "devDependencies": {
+    "@svgr/core": "^5.3.0",
+    "@types/react": "^16.9.27",
+    "cheerio": "^1.0.0-rc.3",
+    "glob": "^7.1.6",
+    "handlebars": "^4.7.3",
+    "lodash": "^4.17.15",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "shortid": "^2.2.15",
+    "typescript": "^3.8.3",
+    "yargs": "^15.3.1"
+  }
+}

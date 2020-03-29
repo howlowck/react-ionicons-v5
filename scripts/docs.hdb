@@ -1,0 +1,21 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import {
+{{#each componentNames}}
+  {{this}},
+{{/each}}
+} from '../dist'
+
+class App extends React.Component {
+    render() {
+        return <div>
+{{#each componentNames}}
+            <a className="icon-container" title="<{{this}} />"><{{this}} /></a>
+{{/each}}
+        </div>
+    }
+}
+
+let root = document.getElementById("app");
+
+ReactDOM.render(<App />, root);

@@ -1,0 +1,9 @@
+{{#each componentNames}}
+import {{this}} from './icons/{{this}}'
+{{/each}}
+
+export {
+{{#each componentNames}}
+  {{this}},
+{{/each}}
+}

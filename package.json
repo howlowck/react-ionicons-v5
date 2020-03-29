@@ -2,7 +2,7 @@
   "name": "react-ionicons-v5",
   "version": "1.1.0",
   "description": "React Components for Ionicon v5 (with some enhancements)",
-  "main": "dist/prod.js",
+  "main": "dist/index.js",
   "scripts": {
     "generate": "node scripts/generate -a",
     "docs": "parcel docs-src/index.html -d dev-docs",

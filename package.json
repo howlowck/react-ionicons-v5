@@ -1,6 +1,6 @@
 {
   "name": "react-ionicons-v5",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "React Components for Ionicon v5 (with some enhancements)",
   "main": "dist/index.js",
   "scripts": {
